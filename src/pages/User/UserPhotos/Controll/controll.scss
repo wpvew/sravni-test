@@ -1,0 +1,20 @@
+.pagination {
+  margin-top: auto;
+  align-self: center;
+  display: flex;
+  align-items: center;
+}
+
+.page {
+  margin: 0 20px;
+}
+
+@media(max-width: 420px) {
+  .pagination {
+    margin: 0;
+    margin-bottom: 10px;
+    order: 1;
+    width: 100%;
+    justify-content: space-between;
+  }
+}

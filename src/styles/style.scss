@@ -1,0 +1,36 @@
+@import './var', './mixin';
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*, ::after, ::before {
+  box-sizing: inherit;
+}
+
+body {
+  @include reset;
+  font-family: Ubuntu, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  background-color: $color-background
+}
+
+ul, a, button {
+  @include reset;
+}
+
+button, a {
+  cursor: pointer;
+  &:disabled {
+    cursor: auto;
+    opacity: .3;
+    color: $color-black;
+    border-color: $color-black;
+  }
+}
+
+:focus {
+  outline: none;
+}

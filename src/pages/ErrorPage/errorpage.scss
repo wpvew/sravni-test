@@ -1,0 +1,23 @@
+@import '@styles/var';
+@import '@styles/mixin';
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0;
+  color: $color-black;
+}
+
+.title {
+  @include reset;
+  margin-bottom: 10px;
+  font-size: 128px;
+  line-height: 1;
+}
+
+.message {
+  @include reset;
+  font-size: 48px;
+  line-height: 1;
+}

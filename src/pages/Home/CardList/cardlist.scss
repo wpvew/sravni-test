@@ -1,0 +1,46 @@
+@import '@styles/_var';
+
+.list {
+  width: 100%;
+}
+
+.item {
+  margin-bottom: 20px;
+  background-color: $color-white;
+  border-radius: 8px;
+  transition: box-shadow .2s ease-in-out;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+
+  &:hover > div[class*="company"] {
+    transform: translateX(0)
+  }
+
+  &:last-child {
+    margin: 0;
+  }
+
+  &:hover {
+    box-shadow: 0 0 20px rgba($color-black, 0.4);
+  }
+}
+
+@media(max-width: 1080px) and (min-width: 961px) {
+  .item {
+    &:hover div[class*="carditem__container"] {
+      transform: translateX(-56%)
+    }
+  }
+}
+
+@media(max-width: 420px) {
+  .item {
+    flex-direction: column;
+    &:hover {
+      box-shadow: 0 0 5px rgba($color-black, 0.4);;
+    }
+  }
+}
