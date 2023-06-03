@@ -1,4 +1,4 @@
-# Green-Api-test
+# Sravni.ru
 Frontend application\
 Пиманов Иван. Тестовое задание.
 
