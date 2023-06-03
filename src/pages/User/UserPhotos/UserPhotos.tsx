@@ -3,7 +3,7 @@ import { useAppDispatch, useAppSelector } from '../../../store/hooks';
 import { fetchPhotoList } from '../../../store/slice/photoListSlice';
 import { useParams } from 'react-router-dom';
 import { PhotoList } from './PhotoList';
-import { Controll } from './Controll';
+import { Control } from './Control';
 import styles from './userphotos.scss';
 
 export function UserPhotos() {
@@ -27,7 +27,7 @@ export function UserPhotos() {
         {error && !isLoading && <span>{error}</span>}
         {isLoading && <span>Loading...</span>}
       </div>
-      <Controll
+      <Control
         page={page}
         onClickPrev={() => setPage((prev) => --prev)}
         onClickNext={() => setPage((prev) => ++prev)}

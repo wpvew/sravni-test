@@ -2,11 +2,11 @@ import React from 'react';
 import { TPhotoList } from '../../../../store/slice/photoListSlice';
 import styles from './photolist.scss';
 
-interface IPhotoItemProps {
+interface IPhotoListProps {
   list: TPhotoList;
 }
 
-export function PhotoList({ list }: IPhotoItemProps) {
+export function PhotoList({ list }: IPhotoListProps) {
   return (
     <>
       {list.map((photo) => (

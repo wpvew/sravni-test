@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 import { TUserData } from '../../../../store/slice/userSlice';
 import styles from './carditem.scss';
 
-interface IUserItemProps {
+interface ICardItemProps {
   userData: TUserData;
 }
 
-export function CardItem({ userData }: IUserItemProps) {
+export function CardItem({ userData }: ICardItemProps) {
   return (
     <Link to={`/user/${userData.id}`} className={styles.card}>
       <div className={styles.container}>

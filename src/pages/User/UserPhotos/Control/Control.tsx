@@ -1,15 +1,15 @@
 import React from 'react';
 import { UButton } from '../../../../components/UI/UButton';
 import { useAppSelector } from '../../../../store/hooks';
-import styles from './controll.scss';
+import styles from './control.scss';
 
-interface IControllProps {
+interface IControlProps {
   page: number;
   onClickPrev: () => void;
   onClickNext: () => void;
 }
 
-export function Controll({ page, onClickNext, onClickPrev }: IControllProps) {
+export function Control({ page, onClickNext, onClickPrev }: IControlProps) {
   const { data: photoList, isLoading } = useAppSelector((state) => state.photoListSliceReducer);
 
   return (
